@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Mi Extensión",
+  "version": "1.0",
+  "description": "Descripción de mi extensión.",
+  "action": {
+      "default_popup": "dist/mi-proyecto/index.html"
+  },
+  "permissions": ["storage"],
+  "web_accessible_resources": [
+      {
+          "resources": ["dist/mi-proyecto/*.css", "dist/mi-proyecto/*.js"],
+          "matches": ["<all_urls>"]
+      }
+  ]
+}
